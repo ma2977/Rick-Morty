@@ -19,11 +19,12 @@ const ResidentCard = ({ url }) => {
 <p>Loading Character</p>
 ) : (
 <article>
+<div className="residentCard">
    <div>
        <img src={resident.image} alt={resident.name} />
    </div>
-   <h3>{resident.name}</h3>
-<ul>
+   <h2>{resident.name}</h2>
+    <ul>
    <li>
        <b>Specie: </b>
        {resident.species}
@@ -40,7 +41,8 @@ const ResidentCard = ({ url }) => {
        <b>Appearances: </b>
        {resident.episode.length}
    </li>
-</ul>
+    </ul>
+       </div>
        </article>
 )}
         </>

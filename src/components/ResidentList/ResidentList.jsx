@@ -10,7 +10,7 @@ const ResidentList = ({ residents = [] }) => {
 
 return (
         <>
-       <div>
+       
             <button onClick={() => changePageTo(numberPage -1)}>Back</button>
             {/* {getPageButtons()} */ }
             {pages.map((i) => (
@@ -21,7 +21,7 @@ return (
 
 
             <button onClick={() => changePageTo(numberPage +1)}>Next</button>
-        </div>
+        
 <br></br>
 <select name ="quantity_per_pages" value={quantityPagination} onChange={(e) =>
 setQuantityPagination(Number(e.target.value))}>

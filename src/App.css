@@ -5,61 +5,72 @@
     padding: 1px;
     box-sizing: border-box;
 }
-li {
-    list-style-type: none 
-}
 
 body {
-   background-image: url("https://www.rawpixel.com/image/5924106/photo-image-public-domain-stars-galaxy");    
-   background-color: #000;
+   background-image: url("public/galaxy.jpg"); 
+   background-color: #05292e;
    color: aliceblue;
+   background-size: 100% 100%;
+   gap: 5%;
+   background-repeat: no-repeat;
 }
 
+li {
+    list-style-type: none 
+    
+}
+
+li b {
+    font-size: 20px;
+
+}
+
+
 h1 {
-    font-size: 5em;
+    font-size: 8em;
     color: aqua;
     text-shadow: -1px 1px 2px #000;
     line-height: 1.1em;
     font-family: 'Get Schwifty';
     justify-content:flex;
-  
-    }
- 
+    animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px rgb(14, 102, 149), 0 0 20px rgb(36, 130, 167), 0 0 30px #1685db, 0 0 40px #0cbb29;
+        }
+        
+        to {
+          text-shadow: 0 0 20px rgb(69, 148, 170), 0 0 30px #2ab914, 0 0 40px #0cbb29;
+        }
+      }
+
+h2 {
+   font-family: fantasy;     
+}   
+
 h3 {
     font-family: fantasy;
     font-variant: small-caps;
     padding-bottom: 1px;
+    font-weight: 300;
 }
-
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
   button {
     background-color: rgb(1, 40, 27);
     color: greenyellow;
-    border-radius: 20px;  
-  }
-  .residentList {
-    flex-wrap: wrap;
-justify-content: space-around;
-  }
-  .locationId {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 40px;
-    background-color: white;
-    position: fixed;
-    height: 85%;
-    top: 65px;
-    width: 28%;
-    overflow-y: scroll;
-    transition: 0.5s;
-    box-shadow: 5px 10px 20px 0px white;
-    left: 100%;
-    }
+    border-radius: 50px;  
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size: large;
 
+  }
   
+  .residentCard {  
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px 40px;
+    box-shadow: 5px 10px 20px 0px greenyellow;
+    box-sizing: 500px;
+  }

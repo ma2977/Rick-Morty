@@ -37,7 +37,6 @@ useEffect(() => {
   }, []);
   
   return (
-
     <>
       <center>
       <h1>Rick and Morty</h1>
@@ -49,16 +48,17 @@ useEffect(() => {
       {location ? <Location location={location} /> : <Loader />}
     
    <h2>Residents</h2>
-
+  <br></br>
     { location ? (
     <ResidentList residents = {location.residents} /> 
     ) : (
+    
       <p>Loading residents...</p>
+    
     )}
     </center>
     </>
-  );
-  
+  ); 
 }
 
 export default App
