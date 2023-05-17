@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    margin: 7px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none 
+}
+
+body {
+   background-image: url("https://www.rawpixel.com/image/5924106/photo-image-public-domain-stars-galaxy");    
+   background-color: #000;
+   color: aliceblue;
+}
+
+h1 {
+    font-size: 5em;
+    color: aqua;
+    text-shadow: -1px 1px 2px #000;
+    line-height: 1.1em;
+    font-family: 'Get Schwifty';
+    justify-content:flex;
+  
+    }
+ 
+h3 {
+    font-family: fantasy;
+    font-variant: small-caps;
+    padding-bottom: 1px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  button {
+    background-color: rgb(1, 40, 27);
+    color: greenyellow;
+    border-radius: 20px;  
+  }
+  .residentList {
+    flex-wrap: wrap;
+justify-content: space-around;
+  }
+  .locationId {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    background-color: white;
+    position: fixed;
+    height: 85%;
+    top: 65px;
+    width: 28%;
+    overflow-y: scroll;
+    transition: 0.5s;
+    box-shadow: 5px 10px 20px 0px white;
+    left: 100%;
+    }
+
+  
