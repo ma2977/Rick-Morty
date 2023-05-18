@@ -6,7 +6,7 @@ import Location from "./components/location"
 import { getLocationById } from "./services/getLocationById";
 import { getRandomNumber } from "./utils/getRandomNumber";
 import ResidentList from "./components/ResidentList/ResidentList";
-import SearchForm from "./components/searchForm/searchForm";
+import SearchForm from "./components/SearchForm/SearchForm";
 
 
 function App() {
