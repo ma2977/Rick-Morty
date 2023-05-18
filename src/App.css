@@ -6,14 +6,16 @@
     box-sizing: border-box;
 }
 
-body {
-   background-image: url("public/galaxy.jpg"); 
-   background-color: #05292e;
-   color: aliceblue;
-   background-size: 100% 100%;
-   gap: 5%;
-   background-repeat: no-repeat;
-}
+html {
+    background: url("public/galaxy.jpg") bottom center;
+    background-size: cover;
+    background-color: #05292e;
+    color: aliceblue;
+    background-size: 100% 100%;
+    gap: 5%;
+    background-repeat: no-repeat;
+     }
+  
 
 li {
     list-style-type: none 
