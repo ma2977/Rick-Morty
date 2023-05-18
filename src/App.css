@@ -7,13 +7,13 @@
 }
 
 html {
-    background: url("public/galaxy.jpg") bottom center;
+    background: url("/galaxy.jpg") bottom center;
     background-size: cover;
-    background-color: #05292e;
     color: aliceblue;
     background-size: 100% 100%;
     gap: 5%;
     background-repeat: no-repeat;
+    background-color: rgb(2, 57, 2);
     opacity: 100%;
      }
   
